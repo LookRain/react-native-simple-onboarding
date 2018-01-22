@@ -10,7 +10,7 @@ const PageDot = ({ isLight, selected }) => (
     style={{
       ...styles.element,
       ...styles.elementDot,
-      backgroundColor: isLight ? (selected ? 'rgba(0, 0, 0, 0.8)' : 'rgba(0, 0, 0, 0.3)') : (selected ? '#fff' : 'rgba(255, 255, 255, 0.5)'),
+      backgroundColor: isLight ? (selected ? '#F79666' : 'rgba(0, 0, 0, 0.3)') : (selected ? '#F79666' : 'rgba(255, 255, 255, 0.5)'),
     }}
   />
 );
