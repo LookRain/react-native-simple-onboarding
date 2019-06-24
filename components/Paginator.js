@@ -30,7 +30,7 @@ const Paginator = ({ isLight, overlay, showSkip, showNext, showDone, pages, curr
   <View style={{ ...styles.container, ...(overlay ? styles.containerOverlay : {}) }}>
     <View style={styles.buttonLeft}>
       {showSkip && currentPage + 1 !== pages ?
-        <SkipButton isLight={isLight} size={BUTTON_SIZE} onPress={() => { skipHook && skipHook(); onEnd(); }} /> :
+        <SkipButton isLight={isLight} size={BUTTON_SIZE} onPress={() => { if (skipHook) { skipHook(); } onEnd(); }} /> :
         null
       }
     </View>
