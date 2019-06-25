@@ -49,7 +49,7 @@ const styles = {
     textAlign: 'center',
     fontSize: 26,
     color: '#fff',
-    paddingBottom: 15,
+    paddingBottom: 11,
   },
   titleLight: {
     color: '#000',
