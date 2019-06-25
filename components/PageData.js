@@ -9,7 +9,7 @@ const Page = ({ width, height, children }) => (
 
 const PageContent = ({ children }) => (
   <View style={styles.content}>
-    <View style={{ flex: 0 }}>
+    <View style={{ flex: 0, justifyContent: 'space-between' }}>
       {children}
     </View>
   </View>
@@ -21,12 +21,14 @@ const PageData = ({ isLight, image, title, subtitle, titleStyles, subtitleStyles
       <View style={styles.image}>
         {image}
       </View>
-      <Text style={[styles.title, titleStyles, (isLight ? styles.titleLight : {}) ]}>
-        {title}
-      </Text>
-      <Text style={[styles.subtitle, subtitleStyles, (isLight ? styles.subtitleLight : {}) ]}>
-        {subtitle}
-      </Text>
+      <View>
+        <Text style={[styles.title, titleStyles, (isLight ? styles.titleLight : {}) ]}>
+          {title}
+        </Text>
+        <Text style={[styles.subtitle, subtitleStyles, (isLight ? styles.subtitleLight : {}) ]}>
+          {subtitle}
+        </Text>
+      </View> 
     </PageContent>
   </Page>
 );
@@ -36,7 +38,7 @@ const styles = {
     flex: 1,
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
   },
   image: {
     flex: 0,
