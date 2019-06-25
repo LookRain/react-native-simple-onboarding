@@ -43,6 +43,7 @@ const styles = {
   image: {
     flex: 0,
     alignItems: 'center',
+    paddingBottom: 40,
   },
   title: {
     textAlign: 'center',
