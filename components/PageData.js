@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text } from 'react-native';
 
 const Page = ({ width, height, children }) => (
-  <View style={{ width, height }}>
+  <View style={{ width, height, flex: 1 }}>
     {children}
   </View>
 );
